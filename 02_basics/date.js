@@ -16,11 +16,11 @@ console.log(myCreatedDate2.toLocaleString());
 console.log(myCreatedDate3.toLocaleString());
 
 
-let myTimeStamp = Date.now()
+let myTimeStamp = Date.now()//.now -> milliseconds
 
-// console.log(myTimeStamp);
-// console.log(myCreatedDate.getTime());
-// console.log(Math.floor(Date.now()/1000));
+console.log(myTimeStamp);
+console.log(myCreatedDate.getTime());
+console.log(Math.floor(Date.now()/1000));
 
 let newDate = new Date()
 console.log(newDate);

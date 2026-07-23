@@ -9,7 +9,7 @@ console.log(marvel_heros[3][1]);
 const allHeros = marvel_heros.concat(dc_heros)
 console.log(allHeros);
 
-const all_new_heros = [...marvel_heros, ...dc_heros]
+const all_new_heros = [...marvel_heros,...dc_heros]//if not . 2D array ban jayega
 
 console.log(all_new_heros);
 
@@ -20,8 +20,8 @@ console.log(real_another_array);
 
 
 
-console.log(Array.isArray("Hitesh"))
-console.log(Array.from("Hitesh"))
+console.log(Array.isArray("Hitesh"))//false
+console.log(Array.from("Hitesh"))//makes an array
 console.log(Array.from({name: "hitesh"})) // interesting
 
 let score1 = 100

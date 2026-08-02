@@ -1,0 +1,11 @@
+                window
+                    |
+                DOCUMENT
+                    |
+                    HTML
+                    /           \
+                    HEAD          BODY
+                    /   \           |
+                title    meta               div->attribute
+                    /       \               /    \
+                text node   Attribute       Attribute<-H1->textnode    p->textnode

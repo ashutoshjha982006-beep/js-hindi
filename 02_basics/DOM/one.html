@@ -50,3 +50,113 @@ undefined
 title.style.backgroundColor="green"
 'green'
 title -->
+
+
+
+<!-- Live reload enabled.
+tilte=doc
+VM407:1 Uncaught ReferenceError: doc is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM407:1
+title=document.getElementById('heading')
+null
+title.innerText
+VM557:1 Uncaught TypeError: Cannot read properties of null (reading 'innerText')
+    at <anonymous>:1:7
+(anonymous) @ VM557:1
+tilte.innerText
+VM601:1 Uncaught ReferenceError: tilte is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM601:1
+title=document.getElementById("title")
+<h1 id=​"title" class=​"heading">​…​</h1>​
+title.textContent//span bhi deta hai
+'DOM learning on Chai aur code test text'
+title.innerHTML
+'DOM learning on Chai aur code <span style="display: none;">test text</span>'
+title.innerText
+'DOM learning on Chai aur code'
+documnt.querySelector('h1')//selects first of that element
+VM986:1 Uncaught ReferenceError: documnt is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM986:1
+document.querySelector('h1') -->
+
+
+<!-- Live reload enabled.
+tilte=doc
+VM407:1 Uncaught ReferenceError: doc is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM407:1
+title=document.getElementById('heading')
+null
+title.innerText
+VM557:1 Uncaught TypeError: Cannot read properties of null (reading 'innerText')
+    at <anonymous>:1:7
+(anonymous) @ VM557:1
+tilte.innerText
+VM601:1 Uncaught ReferenceError: tilte is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM601:1
+title=document.getElementById("title")
+<h1 id=​"title" class=​"heading">​…​</h1>​
+title.textContent
+'DOM learning on Chai aur code test text'
+title.innerHTML
+'DOM learning on Chai aur code <span style="display: none;">test text</span>'
+title.innerText
+'DOM learning on Chai aur code'
+documnt.querySelector('h1')
+VM986:1 Uncaught ReferenceError: documnt is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM986:1
+document.querySelector('h1')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+document.querySelector('ul')
+<ul>​<li class=​"list-item" style=​"background-color:​ green;​ --darkreader-inline-bgcolor:​ var(--darkreader-background-008000, #006600)​;​" data-darkreader-inline-bgcolor>​…​</li>​<li class=​"list-item" style=​"color:​ green;​ --darkreader-inline-color:​ var(--darkreader-text-008000, #72ff72)​;​ background-color:​ green;​ --darkreader-inline-bgcolor:​ var(--darkreader-background-008000, #006600)​;​" data-darkreader-inline-color data-darkreader-inline-bgcolor>​…​</li>​<li class=​"list-item" style=​"background-color:​ green;​ --darkreader-inline-bgcolor:​ var(--darkreader-background-008000, #006600)​;​" data-darkreader-inline-bgcolor>​…​</li>​<li class=​"list-item">​…​</li>​</ul>​
+const myul = document.querySelector('ul')
+undefined
+myul.querySelector('li')
+<li class=​"list-item" style=​"background-color:​ green;​ --darkreader-inline-bgcolor:​ var(--darkreader-background-008000, #006600)​;​" data-darkreader-inline-bgcolor>​…​</li>​
+const turnGreen = myul.querySelector('li')
+undefined
+turnGreen.style.backgroundColor = "green"
+'green'
+turnGreen.innerText="five"
+'five'
+document.querySelectorAll('li')
+NodeList(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+const tempLiList = document.querySelectorAll('li')
+undefined
+tempLiList
+NodeList(4) [li.list-item, li.list-item, li.list-item, li.list-item]0: li.list-item1: li.list-item2: li.list-item3: li.list-itemlength: 4[[Prototype]]: NodeListentries: ƒ entries()forEach: ƒ forEach()item: ƒ item()keys: ƒ keys()length: (...)values: ƒ values()constructor: ƒ NodeList()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "NodeList"get length: ƒ length()[[Prototype]]: Object
+tempLiList[1].style.color = 'green'
+'green'
+tempLiLi
+VM2557:1 Uncaught ReferenceError: tempLiLi is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM2557:1
+tempLiList.forEach(function (l) {}
+VM2690:1 Uncaught SyntaxError: missing ) after argument list (at VM2690:1:34)
+tempLiList.forEach(function (l) {})
+undefined
+tempLiList.forEach(function (l) {
+    l.style.backgroundColor='green'
+})
+undefined
+document.getElementsByClassName('list-item')
+HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item] -->
+
+
+
+<!-- const tempclassList = document.getElementsByClassName('list-item')
+undefined
+tempclassList
+HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+Array.from(tempclassList)
+(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+myConvertedArray=Array.from(tempclassList)
+(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+myConvertedArray.forEach(function(li){
+    li.style.color='orange'
+}) -->

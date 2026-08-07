@@ -44,7 +44,7 @@ function validateGuess(guess){
 
 function checkGuess(guess){
   // correct low or high
-  if(guess===randomNumber){
+  if(guess===randomNum){
     displayMessage(`You guessed it right`)
     endGame()
   }else if(guess<randomNum){

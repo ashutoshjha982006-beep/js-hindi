@@ -19,6 +19,8 @@
    </div>
 </body>
 <script>
+    //If third parameter is false event bubbling->pehle andar wala event chalega phir bahar wala true -> event capturing pehle bahar phir andar
+    //onclick gives less features
     // document.getElementById('owl').onclick = function(){
     //     alert("owl clicked")
     // }
@@ -31,20 +33,22 @@
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
-    // document.getElementById('images').addEventListener('click', function(e){
-    //     console.log("clicked inside the ul");
-    // }, false)
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log("clicked inside the ul");
+    }, false)
 
-    // document.getElementById('owl').addEventListener('click', function(e){
-    //     console.log("owl clicked");
-    //     e.stopPropagation()
-    // }, false)
     
-    // document.getElementById('google').addEventListener('click',function(e){
-    //     e.preventDefault();
-    //     e.stopPropagation()
-    //     console.log("google clicked");
-    // }, false)
+
+    document.getElementById('owl').addEventListener('click', function(e){
+        console.log("owl clicked");
+        e.stopPropagation()
+    }, false)
+    
+    document.getElementById('google').addEventListener('click',function(e){
+        e.preventDefault();
+        e.stopPropagation()//if you don't want bubbling clicked inside ul print nahi hoga
+        console.log("google clicked");
+    }, false)
    
     
     document.querySelector('#images').addEventListener('click', function(e){

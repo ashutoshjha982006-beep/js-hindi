@@ -19,9 +19,13 @@ function User(username,loginCount,isLoggedIn){
     this.loginCount=loginCount
     this.isLoggedIn=isLoggedIn
 
-    return this
+    return this //this is implicitly defined
 }
 
 
-const userOne=User("hitesh",12,true)
+const userOne=new User("hitesh",12,true)
+const userTwo=new User("ChaiAurCode",11,false)
+//console.log(userOne)
+console.log(userOne.constructor)
 
+//function,array,string->object->null
